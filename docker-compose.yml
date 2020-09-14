@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+    app: # サービス名。appじゃなくてもいい
+        build: ./infra/php  # docker buildを実行する際の現在の作業ディレクトリ
+        volumes:
+            - ./backend:/work
